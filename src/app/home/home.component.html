@@ -1,0 +1,13 @@
+<app-search></app-search>
+<app-not-found
+resetLinkText="Reset Search">
+</app-not-found>
+
+<div class="row">
+
+    <a class="col-lg-4 mt-4" *ngFor="let food of foods" routerLink="/food/{{food.id}}">
+      
+      <img [src]="food.imageUrl" [alt]="food.name" />
+      
+    </a>
+    </div>
